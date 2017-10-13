@@ -1,0 +1,126 @@
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:background="@drawable/bluebackground"
+tools:context=".PaLogin"  >
+
+
+<RelativeLayout
+    android:layout_width="300dp"
+    android:layout_height="500dp"
+    android:background="@drawable/round_layout_2"
+    android:id="@+id/relativeLayout3"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+
+    <EditText
+        android:id="@+id/pa_uname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/trans25"
+        android:padding="10dp"
+        android:layout_marginTop="190dp"
+        android:hint="@string/UserName"
+        android:inputType="textPersonName" />
+
+
+
+    <EditText
+        android:id="@+id/pa_pword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/trans25"
+        android:layout_below="@id/pa_uname"
+        android:layout_marginTop="1dp"
+        android:hint="@string/p_word"
+        android:inputType="textPassword" />
+
+
+
+
+    <Button
+        android:id="@+id/btn_PALogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pa_pword"
+        android:background="@drawable/loginbtn"
+        android:text="@string/btn_login"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/darkBlue"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/user" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_PALogin"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="60dp">
+
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="36dp"
+            android:layout_weight="1"
+            android:text="@string/no_account"
+            android:textColor="@color/white" />
+
+
+
+
+        <Button
+            android:id="@+id/register_pa"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/registerbtn"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/btn_register" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>
+

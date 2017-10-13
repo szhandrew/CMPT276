@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Dc_signup"
+    android:background="@drawable/greenbackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans75"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/dc_Password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_DCSignUp"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:hint="@string/reenter_Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/dc_FirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="112dp"
+            android:background="@color/white"
+            android:hint="@string/f_name"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/dc_LastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dc_FirstName"
+            android:hint="@string/l_name"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/dc_UserName"
+            android:layout_width="match_parent"
+            android:layout_below="@id/dc_LastName"
+            android:layout_height="wrap_content"
+            android:hint="@string/UserName"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/dc_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dc_UserName"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:hint="@string/p_word"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_DCSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/white"
+            android:text="@string/btn_signup"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="@string/please_register_here"
+        android:textSize="25sp" />
+
+</RelativeLayout>

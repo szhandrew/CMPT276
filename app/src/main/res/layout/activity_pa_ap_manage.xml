@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    tools:context="cmpt276.g12.doctorsdirect.Pa_apManage">
+
+
+    <Button
+        android:id="@+id/btn_MySche"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+        android:background="@drawable/round_btn_blue"
+        android:text="@string/MySche"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/relativeLayout4"
+       />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/round_layout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout4">
+
+        <Spinner
+            android:id="@+id/Spi_doc_sel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tv_dc_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:text="@string/doc_selected"
+            android:textSize="25dp"
+            android:layout_below="@+id/Spi_doc_sel"
+            android:layout_alignStart="@+id/Spi_doc_sel" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/ChooseDoc"
+            android:textSize="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_dcSel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_NEXT"
+            android:layout_below="@id/tv_dc_selected"
+            android:background="@drawable/round_btn_blue"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+          android:layout_margin="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" /><![CDATA[
+
+        />
+
+
+
+    ]]>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

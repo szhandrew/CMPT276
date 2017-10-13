@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/doc_and_patient"
+    tools:context=".Main" >
+
+
+
+    <Button
+        android:id="@+id/btn_PAlg"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="@string/IM_pat"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round_btn_blue"/>
+    
+    <Button
+        android:id="@+id/btn_DClg"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="@string/IM_doc"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/round_btn"/>
+
+    <ImageView
+        android:id="@+id/doctorsdirectlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:src="@drawable/doctorsdirectlogo" />
+</RelativeLayout>

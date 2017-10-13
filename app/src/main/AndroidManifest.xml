@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cmpt276.g12.doctorsdirect"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_drawed"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dc_signup"
+            android:label="@string/title_activity_dc_signup" />
+        <activity
+            android:name=".Pa_signup"
+            android:label="@string/title_activity_pa_signup" />
+        <activity
+            android:name=".PaLogin"
+            android:label="@string/title_activity_pa_login" />
+        <activity
+            android:name=".Dc_login"
+            android:label="@string/title_activity_dc_login" />
+        <activity
+            android:name=".Dc_Main"
+            android:label="@string/title_activity_dc_main" />
+        <activity
+            android:name=".Pa_Main"
+            android:label="@string/title_activity_pa_main" />
+        <activity android:name=".doc_review" />
+        <activity android:name=".ReadReview" />
+        <activity android:name=".Db_select_time" />
+        <activity android:name=".Pa_apManage" />
+        <activity android:name=".pa_timePick" />
+        <activity
+            android:name=".PatientRecord"
+            android:label="@string/title_activity_patient_record" />
+        <activity
+            android:name=".doctorFeedback"
+            android:label="@string/title_activity_doctor_feedback" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".clinic_locator"
+            android:label="@string/title_activity_clinic_locator"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="day">
+        <item>Day</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>Time</item>
+        <item>10am</item>
+        <item>12pm</item>
+        <item>2pm</item>
+    </string-array>
+
+    <string-array name="pickTime">
+        <item>Availability</item>
+        <item>available</item>
+        <item>occupied</item>
+
+    </string-array>
+
+    <string name="app_name">doctorsdirect</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dc_signup">Dc_signup</string>
+    <string name="f_name">first name</string>
+    <string name="l_name">last name</string>
+    <string name="p_word">password</string>
+    <string name="btn_signup">SIGN UP</string>
+    <string name="title_activity_pa_signup">Pa_signup</string>
+    <string name="title_activity_main">Main</string>
+    <string name="IM_doc">DOCTOR</string>
+    <string name="IM_pat">PATIENT</string>
+    <string name="title_activity_pa_login">PaLogin</string>
+    <string name="no_account">Do not have an account?</string>
+    <string name="btn_register">REGISTER NOW!</string>
+    <string name="btn_login">LOG IN</string>
+    <string name="title_activity_dc_login">Dc_login</string>
+    <string name="UserName">username</string>
+    <string name="title_activity_pa_main">Pa_main</string>
+    <string name="title_activity_dc_main">Dc_main</string>
+    <string name="title_activity_tmp__blank">TMP_BLANK</string>
+    <string name="title_activity_pa__tmp__blank">PA_TMP_BLANK</string>
+    <string name="IM">Instant Messaging</string>
+    <string name="PAMGMT">Manage Patients</string>
+    <string name="AMGMT">Appointment Manager</string>
+    <string name="DocRevw">Review Doctors</string>
+    <string name="PaSet">Settings</string>
+    <string name="Rec">Records</string>
+    <string name="title_activity_doc_review">DocReview</string>
+    <string name="btn_prev">Previous</string>
+    <string name="btn_search">Search!</string>
+    <string name="search_txt">Enter a name for searching:</string>
+    <string name="btn_nxt">Next</string>
+    <string name="btn_review">WRITE A REVIEW</string>
+    <string name="title_activity_db_select_time">Db_select_time</string>
+    <string name="submit">Submit!</string>
+    <string name="Mon_10">Monday 10am-12am</string>
+    <string name="Mon_1">Monday 1pm-3pm</string>
+    <string name="Mon_4">Monday 4pm-6pm</string>
+    <string name="Tue_10">Tuesday 10am-12am</string>
+    <string name="Tue_1">Tuesday 1pm-3pm</string>
+    <string name="Tue_4">Tuesday 4pm-6pm</string>
+    <string name="btn_NEXT">NEXT</string>
+    <string name="day_selected">Your selection is: </string>
+    <string name="doc_selected">Your selection is: </string>
+    <string name="ChooseDoc">Please select a doctor</string>
+    <string name="ClickandSee">Select Day and Time to show availability</string>
+    <string name="btn_Show">SHOW</string>
+    <string name="btn_Confirm">CONFIRM</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_patient_record">PatientRecord</string>
+    <string name="title_activity_patient_feedback">PatientFeedback</string>
+    <string name="title_activity_doctor_feedback">doctorFeedback</string>
+    <string name="MySche">MY SCHEDULE</string>
+    <string name="title_activity_clinic_locator">Map</string>
+    <string name="reenter_Password">please reenter password</string>
+    <string name="please_register_here">Please Register Here!</string>
+    <string name="update_schedule">Update Schedule</string>
+    <string name="patient_record">Patient Record</string>
+    <string name="feedback">Feedback</string>
+    <string name="message">Message</string>
+</resources>

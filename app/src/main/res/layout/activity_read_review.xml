@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    tools:context=".ReadReview"
+
+    >
+
+    <Button
+        android:id="@+id/btn_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:background="@drawable/round_btn_blue"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/btn_review"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_alignEnd="@+id/relativeLayout4"
+        android:layout_alignStart="@+id/relativeLayout4" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/round_layout"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/relativeLayout4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp">
+
+        <Button
+            android:id="@+id/btnnxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_nxt"
+            android:background="@drawable/round_btn_blue"
+            android:textColor="@color/white"
+            android:layout_alignBaseline="@+id/btnprev"
+            android:layout_alignBottom="@+id/btnprev"
+            android:layout_alignEnd="@+id/btn_search" />
+
+        <Button
+            android:id="@+id/btnprev"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_prev"
+            android:background="@drawable/round_btn_blue"
+            android:textColor="@color/white"
+            android:layout_below="@+id/text_review"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+             />
+
+        <TextView
+            android:id="@+id/text_review"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:hint="Tap to enter message"
+            android:layout_below="@+id/lname"
+
+
+
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+
+            android:background="@null"
+            android:textColor="@color/darkBlue"
+            android:textStyle="bold"
+
+            android:text="@string/btn_search"
+            android:layout_marginStart="11dp"
+            android:layout_alignBaseline="@+id/fname"
+            android:layout_alignBottom="@+id/fname"
+            android:layout_toEndOf="@+id/search_txt" />
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_below="@id/search_txt"
+            android:ems="10"
+            android:hint="@string/f_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fname"
+            android:ems="10"
+            android:hint="@string/l_name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/search_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="@string/search_txt"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

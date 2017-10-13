@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transDarkBlue40"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    >
+
+
+    <TextView
+        android:id="@+id/Pa_welMes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/transparent"
+        android:text="TextView"
+        android:textSize="35dp"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/round_layout_2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/advising"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_btn_blue"
+        android:textColor="@color/white"
+        android:text="Advising Appointment"
+        android:layout_marginTop="50dp"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/review"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_btn_blue"
+        android:text="Doctor Review"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+
+        android:layout_below="@+id/advising"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/findClinic"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_btn_blue"
+        android:text="Find Clinic"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/review"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    tools:context=".doc_review">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_layout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/reviewtext"
+            android:background="@drawable/round_btn_blue"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="@string/submit" />
+
+        <EditText
+            android:id="@+id/docname"
+            style="@android:style/Widget.EditText"
+            android:layout_width="107dp"
+            android:layout_height="37dp"
+
+            android:ems="10"
+            android:hint="@string/f_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+
+            android:id="@+id/reviewtext"
+            style="@android:style/Widget.EditText"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/docname"
+            android:ems="10"
+            android:inputType="text|textMultiLine|textLongMessage"
+            android:selectAllOnFocus="false"
+            android:singleLine="false" />
+
+        <EditText
+            android:id="@+id/date"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_below="@+id/docnamelast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/docnamelast"
+            style="@android:style/Widget.EditText"
+            android:layout_below="@id/docname"
+            android:layout_width="107dp"
+            android:layout_height="37dp"
+            android:ems="10"
+            android:hint="@string/l_name"
+
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
